@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Autenticação Senior</title>
+</head>
+<body>
+    
+
+    <form action="">
+
+        <div class="container">
+            <div class="brand-logo"></div>
+            <div class="brand-title">Senior- Unidade Noroeste Paulista</div>
+            <div class="inputs">
+              <label>EMAIL</label>
+              <input name ="email" id="email" type="email" placeholder="example@test.com" />
+              <label>PASSWORD</label>
+              <input id="password" type="password" placeholder="xxxxxxxx" />
+              <button onclick="entrar()" type="button">LOGIN</button>
+            </div>
+          </div>
+
+    </form>
+
+
+
+    <script>
+    
+        function entrar() {
+
+         let email1 = document.querySelector('#email')
+          email ="admin@snpdemo-demo.com.br"
+          const valoremail = document.querySelector('#email')
+          const value = valoremail.value
+
+            console.log(value)
+
+            if(email != value) {
+                alert('E-MAIL OU SENHA INVALIDA')
+            }else
+
+            window.location.replace('file:///C:/Users/DrinDrinStarmoderfox/OneDrive/GitHub/Unidade/hello.html');
+        }
+         
+
+
+    </script>
+</body>
+</html>

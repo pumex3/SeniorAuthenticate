@@ -1,0 +1,45 @@
+{
+
+    "menu": {
+    
+    "children": [
+    
+    {
+    
+    "label": "Autenticação",
+    
+    "labelI18n": "platform.backend.administration", //Utilizado para poder internacionalizar o menu customizado, é obrigatório começar com platform.backend.xxxxx
+    
+    "children": [
+    
+    {
+    
+    "label": "Autenticação SINGLE SING ON TESTE",   
+    
+    "path": {
+    
+    "category": "CurrentTab", //pode ser do tipo CurrentTab para abrir dentro da plataforma, NewTab para abrir em uma nova aba e DesktopNative para abrir via launcher
+    
+    "menuId": "www.google.com.br" //url do menu que se quer abrir, se for CurrentTab tem que ser https
+    
+    },
+    
+    "auth": {
+ 
+    "resource": "res://senior.com.br/platform/authentication/mfa_tenant_config", //recurso que será utilizado para validar a permissão, tem que pegar da tela de gestão de recursos
+    
+    "permission": "Visualizar" //ação sobre o recurso que será utilizada para validar a permissão, também tem que pegar da gestão de recursos
+    
+    }
+    
+    }
+    
+    ]
+    
+    }
+    
+    ]
+    
+    }
+    
+    }
